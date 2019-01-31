@@ -1,0 +1,6 @@
+export { default as ContentLoader } from './ContentLoader.html'
+export { default as BulletListLoader } from './BulletListLoader.html'
+export { default as CodeLoader } from './CodeLoader.html'
+export { default as FacebookLoader } from './FacebookLoader.html'
+export { default as ListLoader } from './ListLoader.html'
+export { default as InstagramLoader } from './InstagramLoader.html'
