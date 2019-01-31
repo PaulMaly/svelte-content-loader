@@ -1,8 +1,8 @@
 {
-    "name": "svelte-morphing-modal",
+    "name": "svelte-content-loader",
     "version": "1.0.0",
     "description": "Svelte Content Loader for Svelte 3",
-    "svelte": "src/index.html",
+    "svelte": "src/index.js",
     "main": "index.js",
     "module": "index.mjs",
     "scripts": {
