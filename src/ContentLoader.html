@@ -1,0 +1,65 @@
+<svg viewBox="0 0 {width} {height}" version="1.1" {preserveAspectRatio}>
+	<rect
+		style="fill: url(#{idGradient})" 
+		clip-path="url(#{idClip})" 
+		{width} {height} 
+		x="0" y="0"	
+	/>
+	<defs>
+		<clipPath id={idClip}>
+			<slot>
+				<rect {width} {height} x="0" y="0" rx="5" ry="5"/>			
+			</slot>
+		</clipPath>
+		<linearGradient id={idGradient}>
+			<stop stop-color={primaryColor} offset="0%">
+				{#if animate}
+				<animate 
+					dur="{speed}s" 
+					values="-2; 1" 
+					attributeName="offset" 
+					repeatCount="indefinite"	
+				/>
+				{/if}
+			</stop>
+			<stop stop-color={secondaryColor} offset="50%">
+				{#if animate}
+				<animate 
+					dur="{speed}s" 
+					values="-1.5; 1.5" 
+					attributeName="offset" 
+					repeatCount="indefinite"
+				/>
+				{/if}
+			</stop>
+			<stop stop-color={primaryColor} offset="100%">
+				{#if animate}
+				<animate 
+					dur="{speed}s" 
+					values="-1; 2" 
+					attributeName="offset" 
+					repeatCount="indefinite"
+				/>
+				{/if}
+			</stop>
+		</linearGradient>
+	</defs>
+</svg>
+<script>
+	function uid() {
+		return Math.random().toString(36).substring(2);
+	}
+	
+	export let preserveAspectRatio = 'xMidYMid meet',
+		secondaryColor = '#ecebeb',
+		primaryColor = '#f9f9f9',
+		animate = true,
+		height = 130,
+		width = 400,
+		speed = 2,
+		uniqueKey;
+	
+	let idClip, idGradient;
+	$: idClip = uniqueKey ? `${uniqueKey}-idClip` : uid();
+ 	$: idGradient = uniqueKey ? `${uniqueKey}-idGradient` : uid();
+</script>
