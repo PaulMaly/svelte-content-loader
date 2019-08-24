@@ -15,7 +15,7 @@ This is a Svelte port for [vue-content-loader](https://github.com/egoist/vue-con
 - Performance:
   - Tree-shakable and highly optimized bundle.
   - Pure SVG, so it's works without any javascript, canvas, etc.
-  - Pure functional components.
+  - Vanilla js components.
 
 ## Install
 
@@ -31,7 +31,7 @@ CDN: [UNPKG](https://unpkg.com/svelte-content-loader/) | [jsDelivr](https://cdn.
 
 ## Usage
 
-```svelte
+```html
 <ContentLoader>/* svg here */</ContentLoader>
 
 <script>
@@ -53,7 +53,7 @@ import {
 
 `ContentLoader` is a meta loader while other loaders are just higher-order components of it. By default `ContentLoader` only displays a simple rectangle, here's how you can use it to create custom loaders:
 
-```svelte
+```html
 <ContentLoader>
   <rect x="0" y="0" rx="3" ry="3" width="250" height="10" />
   <rect x="20" y="20" rx="3" ry="3" width="220" height="10" />
@@ -69,7 +69,6 @@ This is also how [ListLoader](./src/ListLoader.svelte) is created.
 ## API
 
 ### Props
-
 
 |Prop|Type|Default|Description|
 |---|---|---|---|
@@ -92,4 +91,4 @@ This is basically a Svelte port for [vue-content-loader](https://github.com/egoi
 
 ## License
 
-MIT &copy; [EGOIST](https://github.com/PaulMaly)
+MIT &copy; [PaulMaly](https://github.com/PaulMaly)
