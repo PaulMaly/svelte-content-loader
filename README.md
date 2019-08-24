@@ -1,5 +1,5 @@
 # Svelte Content Loader for Svelte 3
-=
+
 [![NPM version](https://img.shields.io/npm/v/svelte-content-loader.svg?style=flat)](https://www.npmjs.com/package/svelte-content-loader) [![NPM downloads](https://img.shields.io/npm/dm/svelte-content-loader.svg?style=flat)](https://www.npmjs.com/package/svelte-content-loader)
 
 SVG component to create placeholder loading, like Facebook cards loading.
@@ -15,7 +15,7 @@ This is a Svelte port for [vue-content-loader](https://github.com/egoist/vue-con
 - Performance:
   - Tree-shakable and highly optimized bundle.
   - Pure SVG, so it's works without any javascript, canvas, etc.
-  - Vanilla js components.
+  - Vanilla JS components.
 
 ## Install
 
@@ -32,7 +32,7 @@ CDN: [UNPKG](https://unpkg.com/svelte-content-loader/) | [jsDelivr](https://cdn.
 ## Usage
 
 ```html
-<ContentLoader>/* svg here */</ContentLoader>
+<ContentLoader/>
 
 <script>
 import ContentLoader from 'svelte-content-loader';
