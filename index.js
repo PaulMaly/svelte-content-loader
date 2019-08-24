@@ -595,7 +595,7 @@
 
     function instance($$self, $$props, $$invalidate) {
     	
-    	
+
     	let { preserveAspectRatio = 'xMidYMid meet', secondaryColor = '#ecebeb', primaryColor = '#f9f9f9', secondaryOpacity = 1, primaryOpacity = 1, animate = true, baseUrl = '', height = 130, width = 400, speed = 2, uniqueKey } = $$props;
 
     	let { $$slots = {}, $$scope } = $$props;

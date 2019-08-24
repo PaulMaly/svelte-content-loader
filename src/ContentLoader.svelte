@@ -45,11 +45,12 @@
 		</linearGradient>
 	</defs>
 </svg>
+
 <script>
 	function uid() {
 		return Math.random().toString(36).substring(2);
 	}
-	
+
 	export let preserveAspectRatio = 'xMidYMid meet',
 		secondaryColor = '#ecebeb',
 		primaryColor = '#f9f9f9',
@@ -63,5 +64,5 @@
 		uniqueKey;
 
 	$: idClip = uniqueKey ? `${uniqueKey}-idClip` : uid();
- 	$: idGradient = uniqueKey ? `${uniqueKey}-idGradient` : uid();
+	$: idGradient = uniqueKey ? `${uniqueKey}-idGradient` : uid();
 </script>
