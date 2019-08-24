@@ -66,12 +66,20 @@ import {
 
 This is also how [ListLoader](./src/ListLoader.svelte) is created.
 
+If you are **not** using using es6, instead of importing add 
+
+```html
+<script src="/path/to/svelte-content-loader/index.js"></script>
+```
+
+just before closing body tag. 
+
 ## API
 
 ### Props
 
-|Prop|Type|Default|Description|
-|---|---|---|---|
+| Name | Type | Default | Description |
+| --- | --- | --- | --- | --- |
 |width|number|`400`||
 |height|number|`130`||
 |speed|number|`2`||
