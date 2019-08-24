@@ -1,7 +1,7 @@
 <svg viewBox="0 0 {width} {height}" version="1.1" {preserveAspectRatio}>
 	<rect
-		style="fill: url(#{idGradient})" 
-		clip-path="url(#{idClip})" 
+		style="fill: url({baseUrl}#{idGradient})" 
+		clip-path="url({baseUrl}#{idClip})" 
 		{width} {height} 
 		x="0" y="0"	
 	/>
@@ -12,7 +12,7 @@
 			</slot>
 		</clipPath>
 		<linearGradient id={idGradient}>
-			<stop stop-color={primaryColor} offset="0%">
+			<stop stop-color={primaryColor} stop-opacity={primaryOpacity} offset="0%">
 				{#if animate}
 				<animate 
 					dur="{speed}s" 
@@ -22,7 +22,7 @@
 				/>
 				{/if}
 			</stop>
-			<stop stop-color={secondaryColor} offset="50%">
+			<stop stop-color={secondaryColor} stop-opacity={secondaryOpacity} offset="50%">
 				{#if animate}
 				<animate 
 					dur="{speed}s" 
@@ -32,7 +32,7 @@
 				/>
 				{/if}
 			</stop>
-			<stop stop-color={primaryColor} offset="100%">
+			<stop stop-color={primaryColor} stop-opacity={primaryOpacity} offset="100%">
 				{#if animate}
 				<animate 
 					dur="{speed}s" 
@@ -53,13 +53,15 @@
 	export let preserveAspectRatio = 'xMidYMid meet',
 		secondaryColor = '#ecebeb',
 		primaryColor = '#f9f9f9',
+		secondaryOpacity = 1,
+		primaryOpacity = 1,
 		animate = true,
+		baseUrl = '',
 		height = 130,
 		width = 400,
 		speed = 2,
 		uniqueKey;
-	
-	let idClip, idGradient;
+
 	$: idClip = uniqueKey ? `${uniqueKey}-idClip` : uid();
  	$: idGradient = uniqueKey ? `${uniqueKey}-idGradient` : uid();
 </script>

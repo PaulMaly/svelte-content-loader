@@ -1,6 +1,6 @@
-export { default as ContentLoader } from './ContentLoader.html'
-export { default as BulletListLoader } from './BulletListLoader.html'
-export { default as CodeLoader } from './CodeLoader.html'
-export { default as FacebookLoader } from './FacebookLoader.html'
-export { default as ListLoader } from './ListLoader.html'
-export { default as InstagramLoader } from './InstagramLoader.html'
+export { default } from './ContentLoader.svelte';
+export { default as BulletListLoader } from './BulletListLoader.svelte';
+export { default as CodeLoader } from './CodeLoader.svelte';
+export { default as FacebookLoader } from './FacebookLoader.svelte';
+export { default as ListLoader } from './ListLoader.svelte';
+export { default as InstagramLoader } from './InstagramLoader.svelte';

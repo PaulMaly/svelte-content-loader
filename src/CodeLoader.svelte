@@ -12,5 +12,5 @@
 </ContentLoader>
 
 <script>
-	import ContentLoader from './ContentLoader.html';
+	import ContentLoader from './ContentLoader.svelte';
 </script>
