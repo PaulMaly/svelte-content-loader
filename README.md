@@ -78,8 +78,8 @@ just before closing body tag.
 
 ### Props
 
-| Name | Type | Default | Description |
-| --- | --- | --- | --- | --- |
+|Name|Type|Default|Description|
+|---|---|---|---|---|
 |width|number|`400`||
 |height|number|`130`||
 |speed|number|`2`||
