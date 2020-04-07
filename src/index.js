@@ -4,3 +4,4 @@ export { default as CodeLoader } from './CodeLoader.svelte';
 export { default as FacebookLoader } from './FacebookLoader.svelte';
 export { default as ListLoader } from './ListLoader.svelte';
 export { default as InstagramLoader } from './InstagramLoader.svelte';
+export { default as TableLoader } from './TableLoader.svelte';

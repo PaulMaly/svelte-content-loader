@@ -1,6 +1,6 @@
 {
     "name": "svelte-content-loader",
-    "version": "1.1.2",
+    "version": "1.1.3",
     "description": "Svelte Content Loader for Svelte 3",
     "svelte": "src/index.js",
     "main": "index.js",

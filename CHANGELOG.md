@@ -1,5 +1,11 @@
 # svelte-content-loader changelog
 
+## 1.1.3
+* prettier config added
+* a11y improved
+* props of built-in loaders
+* TableLoader added
+
 ## 1.1.2
 * eslint added
 * CHANGELOG & editorconfig added
