@@ -54,5 +54,5 @@
 </ContentLoader>
 
 <script>
-    import ContentLoader from 'svelte-content-loader';
+    import ContentLoader from './ContentLoader.svelte';
 </script>
